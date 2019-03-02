@@ -1,0 +1,258 @@
+body{
+    background-color:White;
+    margin-top: 50px;
+}
+
+li{
+	text-decoration: none;
+	display:inline;
+	background-color: White;
+  font-family: garamond;
+	color: #121E40;
+}
+
+a.skip{
+	padding:10px;
+	text-decoration: none;
+  color: #34527F;
+	position: relative;
+    top: -80px;
+    transition: top ease-in 2s;
+}
+
+a.skip:focus{
+	background-color: white;
+  color: black;
+	top: -20px;
+	border: 1px solid black;
+}
+
+
+
+
+@media screen and (min-width:320px){
+
+.gallery{
+  display: grid;
+  grid-gap: 15px 15px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.gallery img{
+  display: grid;
+  width: 90%;
+	height: auto;
+  justify-content: center;
+}
+p{
+  color: #121E40;
+  font-family: garamond;
+  text-align: left;
+  font-size: 150%;
+  line-height: 2.5;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  font-family: garamond;
+  font-weight: bold;
+  font-size: 150%;
+  color: #34527F;
+  padding-top: 5px;
+  margin-top: 5px;
+
+  background-color: white;
+  }
+}
+/* @media screen and (min-width: px){
+  .gallery{
+  	display: grid;
+    grid-gap: 15px 15px;
+  	flex-direction: row;
+  	flex-wrap: wrap;
+  	align-items: center;
+  	justify-content: space-around;
+
+  }
+  .gallery{
+  	display:grid;
+  	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .gallery img{
+  	width: 90%;
+  	height: auto;
+
+  }
+  p{
+    color: #121E40;
+    font-family: garamond;
+    text-align: left;
+    font-size: 120%;
+    line-height: 2.5;
+  }
+  nav a {
+    text-decoration: none;
+    display: inline;
+    font-family: garamond;
+    font-weight: bold;
+    font-size: 130%;
+    color: #34527F;
+    padding-top: 500px;
+    margin-top: 500px;
+    margin-right: 5px;
+    background-color: none;
+    }
+} */
+@media screen and (min-width: 800px){
+
+  .gallery{
+    display: grid;
+    grid-gap: 15px 15px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr
+  }
+.gallery img{
+  width: 90%;
+  height: auto;
+  }
+  p{
+    color: #121E40;
+    font-family: garamond;
+    text-align: left;
+    font-size: 100%;
+    line-height: 2.5;
+  }
+  nav a {
+    text-decoration: none;
+    display: inline;
+    font-family: garamond;
+    font-weight: bold;
+    font-size: 120%;
+    color: #34527F;
+    padding-top: 500px;
+    margin-top: 500px;
+    margin-right: 5px;
+    background-color: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	body{
+		background-color: White;
+	}
+	a.skip{
+		transition: top;
+	}
+	.animation:hover{
+		-webkit-animation-name:none;
+	}
+}
+
+
+/* p{
+  color: #121E40;
+  font-family: garamond;
+  text-align: left;
+  font-size: 20px;
+  line-height: 2.5;
+} */
+h1{
+  color: #406de6;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Cormorant Garamond';
+  font-size: 110px;
+  line-height: 1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+h2{
+  color:black;
+  font-weight: 400;
+  text-align:left;
+  justify-content: center;
+  font-family: garamond;
+  font-size: 30px;
+  line-height: 1.5;
+}
+  .current{
+    text-decoration: none;
+    color: #121E40;
+    text-transform: uppercase;
+  }
+
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.text-image {
+  background-image: url("../images/grass.jpg");
+  height: 80vh;
+  background-position: center;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.text-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.aestheticsimage {
+  background-image: url("../images/aesthetics.jpg");
+  height:400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+}
+.image1 {
+
+  max-width: 100%;
+  height: auto;
+}
+.image2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.image3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12vw;
+  /* height: 18vh; */
+}
+
+.fa {
+  padding: 5px;
+  background-color: white;
+  border-color: black;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa:hover {
+  opacity: 0.7;
+  background-color: #557eed;
+}
